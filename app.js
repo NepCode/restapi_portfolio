@@ -1,5 +1,5 @@
 'use strict'
-
+//express tener sistemas de rutas, configuracion express y las peticiones
 var express = require('express');
 var bodyParser = require('body-parser');
 
@@ -9,8 +9,8 @@ var app = express();
 var project_routes = require('./routes/project');
 
 //middlewares
-app.use(bodyParser.urlencoded({extend:false}));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extend:false})); //conf necesaria para bodyparse
+app.use(bodyParser.json()); //todo lo que llegue se convierte en json
 
 //CORS
 
@@ -27,11 +27,11 @@ app.use('/api',project_routes);
 /*app.post('/test/:id',(req,res) => {
     http://localhost:3700/test/88?web=www.tony.com
     console.log(req.body.nombre);
-    console.log(req.body.apellidos);
+    console.log(req.body.apellidos); //recibe parametrod enviaddos por el body
     console.log(req.query.web); //recibe parametros por url peticion http
     console.log(req.params.id);
     res.status(200).send({
-        message: "hello world from api rest"
+        message: "hello world from api rest nodejs"
     });
 });*/
 
