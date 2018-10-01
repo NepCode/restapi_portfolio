@@ -9,14 +9,22 @@ var app = express();
 var project_routes = require('./routes/project');
 
 //middlewares
-app.use(bodyParser.urlencoded({extend:false})); //conf necesaria para bodyparse
+app.use(bodyParser.urlencoded({ extend: false })); //conf necesaria para bodyparse
 app.use(bodyParser.json()); //todo lo que llegue se convierte en json
 
 //CORS
+// Configurar cabeceras y cors
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*'); //* PUT YOUR URL
+    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+    next();
+});
 
 
 //RUTAS
-app.use('/api',project_routes);
+app.use('/api', project_routes);
 
 
 /*app.get('/',(req,res) => {
