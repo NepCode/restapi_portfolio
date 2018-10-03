@@ -5,8 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "serve": "nodemon index.js"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Jose Antonio Aguiala Rojas\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dla\u001b[C\u001b\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b Rojas",
     "license": "MIT",
