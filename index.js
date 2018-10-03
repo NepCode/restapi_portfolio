@@ -10,7 +10,7 @@ mongoose.connect('mongodb://dealer:a123456@ds141128.mlab.com:41128/heroku_v3gsm1
         console.log("DB connection successfully established...");
 
         //creacion del servidor
-        app.listen(port, () => {
+        app.listen(process.env.PORT || 5000 || port, () => {
             console.log("servidor corriendo correctamente en la url: localhost:3700");
         });
     })
