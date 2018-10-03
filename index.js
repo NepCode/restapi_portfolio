@@ -14,4 +14,4 @@ mongoose.connect('mongodb://user:10*nefledeil*10@ds141128.mlab.com:41128/heroku_
             console.log("servidor corriendo correctamente en la url: localhost:3700");
         });
     })
-    .catch(err => console.log(err));
+    .catch(err => console.log('no se pudo conectar' + err));
