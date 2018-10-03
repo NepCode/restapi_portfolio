@@ -1,21 +1,22 @@
 {
-  "name": "api-rest-nodejs",
-  "version": "1.0.0",
-  "description": "Api Rest Angular Portafolio",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-  },
-  "author": "Jose Antonio Aguiala Rojas\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dla\u001b[C\u001b\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b Rojas",
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "connect-multiparty": "^2.1.1",
-    "express": "^4.16.3",
-    "mongoose": "^5.2.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.17.5"
-  }
+    "name": "api-rest-nodejs",
+    "version": "1.0.0",
+    "description": "Api Rest Angular Portafolio",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "nodemon index.js"
+    },
+    "author": "Jose Antonio Aguiala Rojas\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dla\u001b[C\u001b\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b Rojas",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "connect-multiparty": "^2.1.1",
+        "express": "^4.16.3",
+        "mongoose": "^5.2.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.17.5"
+    }
 }
