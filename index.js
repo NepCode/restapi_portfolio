@@ -5,7 +5,7 @@ var app = require('./app'); //conf app express
 var port = 3700;
 
 mongoose.Promise = global.Promise; // realizar conexion con una promesa
-mongoose.connect(process.env.MONGODB || 'mongodb://localhost:27017/portafolio', { useNewUrlParser: true })
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds141128.mlab.com:41128/heroku_v3gsm1tz', { useNewUrlParser: true })
     .then(() => { //comprobar si me he conectado al db
         console.log("DB connection successfully established...");
 
